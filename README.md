@@ -19,7 +19,6 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
-* [Contributing](#contributing)
 * [Authors](#authors)
 * [Acknowledgements](#acknowledgements)
 
@@ -68,18 +67,6 @@ npm run dev
 
 The way this works is pretty simple actually, the path /downloadImage is now assigned to the server middleware script ~/server-middleware/downloadImage.js, the way you can utilize this is by calling the path itself as /downloadImage/?url="YOUR LINK HERE" (without the 
 quotation marks). Keep in mind, the way this avoids CORS is by proxying traffic itself through the NodeJS server, so it is meant for either light files like images or light traffic, it does cleanup after download.
-
-## Contributing
-
-
-
-### Creating A Pull Request
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## Authors
 
