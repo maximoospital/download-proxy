@@ -1,69 +1,90 @@
-# download-proxy
+<br/>
+<p align="center">
+  <h3 align="center">NuxtJS v2 Download-Proxy</h3>
 
-## Build Setup
+  <p align="center">
+    A simple way to avoid CORS trouble in your external downloads.
+    <br/>
+    <br/>
+  </p>
+</p>
 
-```bash
-# install dependencies
-$ npm install
+![Contributors](https://img.shields.io/github/contributors/maximoospital/download-proxy?color=dark-green) ![Forks](https://img.shields.io/github/forks/maximoospital/download-proxy?style=social) ![Stargazers](https://img.shields.io/github/stars/maximoospital/download-proxy?style=social) ![Issues](https://img.shields.io/github/issues/maximoospital/download-proxy) ![License](https://img.shields.io/github/license/maximoospital/download-proxy) 
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Table Of Contents
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
 
-# generate static project
-$ npm run generate
+## About The Project
+
+![Screen Shot](images/screenshot.png)
+
+This is a solution to a (highly specific) problem i've had with NuxtJS v2, this being trying to get the server to serve me an external server's files as a download, while avoiding the CORS hijinks you'd run into with most solutions.
+
+## Built With
+
+
+
+* [NuxtJS v2](https://v2.nuxt.com/)
+* [@nuxtjs/axios](https://axios.nuxtjs.org/)
+
+## Getting Started
+
+It's honestly pretty boilerplate stuff to get this demo working.
+
+### Prerequisites
+
+You only need NPM, any other stuff you might need you can get it through npm install.
+
+### Installation
+
+1. Clone the repo
+
+```sh
+git clone https://github.com/maximoospital/download-proxy.git
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+2. Install NPM packages
 
-## Special Directories
+```sh
+npm install
+```
 
-You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+3. Run it. 
 
-### `assets`
+```sh
+npm run dev
+```
 
-The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
+## Usage
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
+The way this works is pretty simple actually, the path /downloadImage is now assigned to the server middleware script ~/server-middleware/downloadImage.js, the way you can utilize this is by calling the path itself as /downloadImage/?url="YOUR LINK HERE" (without the 
+quotation marks). Keep in mind, the way this avoids CORS is by proxying traffic itself through the NodeJS server, so it is meant for either light files like images or light traffic, it does cleanup after download.
 
-### `components`
-
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
-
-### `layouts`
-
-Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
+## Contributing
 
 
-### `pages`
 
-This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+### Creating A Pull Request
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-### `plugins`
+## Authors
 
-The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+* **Maximo Ospital** - *Junior Developer and CS Student* - [Maximo Ospital](https://github.com/maximoospital/) - *i made this lol*
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
+## Acknowledgements
 
-### `static`
-
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
-
-### `store`
-
-This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
-
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+* [ShaanCoding for this awesome Readme's generator](https://github.com/ShaanCoding/)
