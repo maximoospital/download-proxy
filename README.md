@@ -9,8 +9,6 @@
   </p>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/maximoospital/download-proxy?color=dark-green) ![Forks](https://img.shields.io/github/forks/maximoospital/download-proxy?style=social) ![Stargazers](https://img.shields.io/github/stars/maximoospital/download-proxy?style=social) ![Issues](https://img.shields.io/github/issues/maximoospital/download-proxy) ![License](https://img.shields.io/github/license/maximoospital/download-proxy) 
-
 ## Table Of Contents
 
 * [About the Project](#about-the-project)
